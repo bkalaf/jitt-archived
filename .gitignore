@@ -1,0 +1,8 @@
+node_modules
+yarn-error.log
+scaffold.sh
+lib
+dist
+coverage
+.history
+.vscode

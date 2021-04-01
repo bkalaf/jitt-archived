@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    
+    button {
+        @apply font-mono font-bold border-2 border-gray-600 rounded-lg;
+    }
+
+    div.navbar-item {
+        @apply block font-sans text-2xl font-bold bg-indigo-700;
+    }
+
+    navbar.menu {
+        @apply bg-red-500;
+    }
+
+}

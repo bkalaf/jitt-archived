@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .navbar {
+        @apply relative w-full px-6 font-bold bg-blue-600 text-amber-200;
+    }
+
+    .navbar-container {
+        @apply container flex flex-col items-center justify-between mx-auto;
+    }
+
+    .navbar-brand {
+        @apply relative z-10 flex items-center w-auto text-2xl font-extrabold leading-none text-amber-200 select-none;
+    }
+
+    a.dropdown-label {
+        @apply relative font-medium leading-6 text-amber-600 transition duration-150 ease-out hover:text-gray-900;
+    }
+    .main-menu {
+        @apply top-0 left-0 z-0 flex items-center justify-center w-full h-full py-5 ml-0 space-x-5 text-base absolute;
+    }
+    .button-group {
+        @apply relative z-10 inline-flex items-center space-x-3;
+    }
+    .button {
+        @apply px-2 rounded-lg border-gray-600 border-2 hover:bg-coolGray-800 hover:text-steel-400 focus:ring-2 focus:ring-lime-500;
+    }
+    
+    .navbar-link {
+        @apply bg-blue-600 text-amber-400 rounded-lg border-transparent;
+    }
+}

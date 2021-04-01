@@ -1,0 +1,19 @@
+{
+    "presets": [
+        "@babel/env",
+        "@babel/typescript",
+        "@babel/react"
+    ],
+    "plugins": [
+        "@babel/proposal-class-properties",
+        "@babel/proposal-do-expressions",
+        ["@babel/proposal-decorators", {
+            "legacy": true
+        }],
+        ["@babel/proposal-pipeline-operator", {
+            "proposal": "fsharp"
+        }],
+        "@babel/proposal-throw-expressions",
+        "@babel/proposal-optional-chaining"
+    ]
+}
