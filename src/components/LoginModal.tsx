@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { JITT } from '../events';
 
 const $$BOUNCE_IN_UP = 'animate__bounceInUp';
@@ -8,7 +9,7 @@ const $$BLOCK = 'block';
 const $$HIDDEN = 'hidden';
 
 const animations = (transition: string) => [$$ANIMATED, transition];
-
+/**@deprecated */
 export function LoginModal() {
     const el: HTMLElement | null = document.getElementById('modal-container');
     const [isVisible, setVisibility] = React.useState(false);

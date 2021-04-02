@@ -1,6 +1,6 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactDivProps } from '../ReactButtonProps';
+import { ReactDivProps } from '../../types/react/ReactButtonProps';
 import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 import { mergeCN } from '../mergeCN';
 

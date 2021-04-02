@@ -2,14 +2,15 @@ import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 
-import { Children } from './Children';
-import { OnClickFunction } from './OnClickFunction';
+import { Children } from '../types/react/Children';
+import DispatchSetState from '../types/react/DispatchSetState';
+import { OnClick } from './OnClickFunction';
 
 interface ModalProps<T extends { [key: string]: string }> {
     id: string;
     formID: string;
     formData: T;
-    setFormData: React.Dispatch<React.SetStateAction<T>>;
+    setFormData: DispatchSetState<T>;
     formDataDefault: T;
     feedback?: string;
     resetFeedback: React.Dispatch<string | undefined>;
@@ -17,7 +18,7 @@ interface ModalProps<T extends { [key: string]: string }> {
     icon: IconDefinition;
     shown: boolean;
     toggle: () => void;
-    forClick: OnClickFunction;
+    forClick: OnClick<any>
     theme: string;
     title: string;
     children?: Children;

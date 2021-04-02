@@ -1,5 +1,6 @@
 import React from 'react';
-import { ReactFormProps } from '../ReactButtonProps';
+
+import ReactFormProps from '../../types/react/ReactFormProps';
 
 export function ModalForm<T extends { [key: string]: string; }>(
     props: {

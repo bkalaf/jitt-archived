@@ -1,3 +1,1 @@
-import { MouseEvent } from 'react';
-
-export type OnClickFunction = (ev: MouseEvent) => void;
+export type OnClick<T> = (ev: React.MouseEvent<T, MouseEvent>) => void;

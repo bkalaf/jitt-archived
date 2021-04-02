@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Children } from './Children';
+import { Children } from '../types/react/Children';
 
 interface ModalContainerProps {
     children?: Children;

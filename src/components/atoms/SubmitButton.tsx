@@ -1,6 +1,4 @@
-import React from 'react';
-import { OnClickFunction } from '../OnClickFunction';
-import { ReactButtonProps } from '../ReactButtonProps';
+import { ReactButtonProps } from '../../types/react/ReactButtonProps';
 
 export type SubmitButtonProps = {
     form: string;

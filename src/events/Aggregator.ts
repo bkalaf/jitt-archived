@@ -1,5 +1,4 @@
-import { eventNames } from 'node:process';
-import { GUID } from './../datatypes/uuid';
+import { GUID } from './../datatypes/GUID';
 
 export interface ISubscription {
     elementType: 'dropdown' | 'button';

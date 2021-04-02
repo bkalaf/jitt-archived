@@ -1,8 +1,9 @@
-import React from 'react';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactFormProps } from '../ReactButtonProps';
+import React from 'react';
 import ReactDOM from 'react-dom';
+
+import ReactFormProps from '../../types/react/ReactFormProps';
 import constants from './../../constants';
 import { IFieldInfo, ModalFooter } from './ModalFooter';
 

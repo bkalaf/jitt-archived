@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactButtonProps } from '../ReactButtonProps';
+import { ReactButtonProps } from '../../types/react/ReactButtonProps';
 
 export type ResetButtonProps<T> = {
     form: string;

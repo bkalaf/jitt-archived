@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { camelCase } from './camelCase';
-import { capitalize } from './capitalize';
+import { camelCase } from '../core/text/camelCase';
+import { capitalize } from '../core/text/capitalize';
 import { mergeCN } from './mergeCN';
 
 /**@deprecated */

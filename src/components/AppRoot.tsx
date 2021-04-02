@@ -39,6 +39,7 @@ export function getDataMap(el: HTMLElement | null): DataAttributes {
             : [],
     };
 }
+/**@deprecated */
 export default function AppRoot() {
     React.useEffect(() => {
         var openmodal = document.querySelectorAll('.modal-open')

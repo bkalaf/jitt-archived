@@ -1,6 +1,6 @@
 import React from 'react';
 import { DataToggleButton, CancelButtonProps } from './DataToggleButton';
-import { composeR } from '../composeR';
+import { composeR } from '../../core/fp/composeR';
 import { FormResetButton } from './ResetButton';
 import { FormSubmitButton, SubmitButtonProps } from './SubmitButton';
 import { convertVoid } from '../convertVoid';
