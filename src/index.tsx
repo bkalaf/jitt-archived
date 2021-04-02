@@ -1,7 +1,11 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRoot from './components/AppRoot';
-import { GUID } from './datatypes/uuid';
-import './styles/styles.css'
+import './styles/styles.css';
+import constants from './constants';
+import { SignInModalButton } from './components/SignInModal';
 
-ReactDOM.render(<AppRoot />, document.getElementById('root'));
+function AppRoot2() {
+    return (
+        <SignInModalButton />
+    );
+}
+ReactDOM.render(<AppRoot2 />, document.getElementById(constants.$appRoot));

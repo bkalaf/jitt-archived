@@ -98,9 +98,9 @@ export function LoginModal() {
         },
     };
 
-    return <div role="dialog" id="login-modal" className="relative flex flex-col max-w-md p-8 bg-white">
+    return <div role="dialog" id="login-modal" className="absolute w-full h-full bg-gray-900 opacity-0">
             <form
-                className="container max-w-md shadows-lg"
+                className="items-center justify-center max-w-md shadows-lg"
                 id="loginForm"
                 method="POST"
                 action="/login">
