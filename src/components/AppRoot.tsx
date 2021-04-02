@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { JITT } from '../events';
-import { LoginModal } from './LoginModal';
-import { ModalContainer } from './ModalContainer';
-import { SignInModal, SignInModalButton } from './SignInModal';
+
+import { SignInModalButton } from './SignInModalButton';
+
 export const DataStore = React.createContext(null);
 export const EventAggregator = React.createContext(null);
 
@@ -21,6 +20,7 @@ interface DataAttributes {
     animationOut?: string[];
     isDismissable: boolean;
 }
+/**@deprecated */
 export function getDataMap(el: HTMLElement | null): DataAttributes {
     if (!el) {
         return { isDismissable: false };

@@ -2,18 +2,62 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@layer components {
-    
+@utilities base {    
     button {
-        @apply font-mono font-bold border-2 border-gray-600 rounded-lg;
+        @apply p-4 m-1 text-lg uppercase rounded shadow-lg;
+    } 
+    button:focus {
+        @apply outline-none ring ring-offset-2;
+    } 
+    input {
+        @apply m-1 bg-gray-300 border border-gray-400 placeholder-steel-600;
     }
-
-    div.navbar-item {
-        @apply block font-sans text-2xl font-bold bg-indigo-700;
+    label {
+        @apply mb-2 text-base font-bold uppercase;
     }
-
-    navbar.menu {
-        @apply bg-red-500;
+}
+@layer components {  
+    .modal {
+        @apply z-50 w-11/12 mx-auto overflow-y-auto bg-white rounded shadow-lg;
+    }
+    .btn {
+        @apply p-4 text-lg uppercase rounded shadow-lg;
+    } 
+    .btn:focus {
+        @apply outline-none ring ring-offset-2;
+    }
+    .btn-blue {
+        @apply text-white bg-blue-500;
+    }
+    .btn-blue:hover {
+        @apply bg-blue-700;
+    }
+    .btn-blue:focus {
+        @apply ring-offset-blue-600;
+    }
+    .btn-amber {
+        @apply text-black bg-amber-500;
+    }
+    .btn-amber:hover {
+        @apply bg-amber-700;
+    }
+    .btn-amber:focus {
+        @apply ring-offset-amber-600;
+    }
+    .button {
+        @apply p-1 m-1 font-sans text-sm font-bold border-2 border-gray-600 rounded-lg shadow-lg;
+    } 
+    .primary-theme {
+        @apply text-gray-800 bg-amber-500;
+    }
+    .form-input {
+        @apply border border-coolGray-600;
+    }
+    .form-label {
+        @apply mb-1 text-base font-bold text-gray-800 uppercase;
+    } 
+    .fa-icon {
+        @apply p-3 border-4 rounded-2xl primary-theme border-steel-600;
     }
 
 }

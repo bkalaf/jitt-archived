@@ -7,6 +7,7 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             current: 'currentColor',
+            white: colors.white,
             steel: colors.blueGray,
             coolGray: colors.coolGray,
             gray: colors.trueGray,
@@ -25,6 +26,9 @@ module.exports = {
             indigo: colors.indigo,
             purple: colors.purple,
             fuchsia: colors.fuchsia,
+            emerald: colors.emerald,
+            lightBlue: colors.lightBlue,
+            violet: colors.violet
         },
         extend: {},
     },

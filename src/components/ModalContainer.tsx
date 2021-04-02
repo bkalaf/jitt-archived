@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import { Children } from './Children';
-import { LoginModal } from './LoginModal';
 
 interface ModalContainerProps {
     children?: Children;
     isVisible?: boolean;
 }
+/**@deprecated */
 export function ModalContainer(props: ModalContainerProps) {
     const { isVisible, ...spread } = props;
     function handleEffect() {
