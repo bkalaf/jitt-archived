@@ -1,5 +1,4 @@
-import React from 'react';
-import { ReactButtonProps } from '../../types/react/ReactButtonProps';
+import ReactButtonProps from '../../types/react/ReactButtonProps';
 
 export type CancelButtonProps = {
     dataToggle: string;

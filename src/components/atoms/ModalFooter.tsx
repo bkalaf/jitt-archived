@@ -1,10 +1,6 @@
-import React from 'react';
-import { DataToggleButton, CancelButtonProps } from './DataToggleButton';
-import { composeR } from '../../core/fp/composeR';
+import { DataToggleButton } from './DataToggleButton';
 import { FormResetButton } from './ResetButton';
-import { FormSubmitButton, SubmitButtonProps } from './SubmitButton';
-import { convertVoid } from '../convertVoid';
-import { RecordWithTtl } from 'node:dns';
+import { FormSubmitButton } from './SubmitButton';
 
 export type ModalFooterProps = {
     form: string;

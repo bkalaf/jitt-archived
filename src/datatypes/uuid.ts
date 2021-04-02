@@ -1,5 +1,5 @@
+import IDataType from '../types/IDataType';
 import { GUID } from './GUID';
-import { IDataType } from './IDataType';
 
 export function uuidv4(): string {
     return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, (char) => {

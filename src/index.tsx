@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import constants from './constants';
-import FirebaseContext, { app } from './db';
+import FirebaseContext from './db';
 
 interface LogEntry {
     msg: string;
@@ -21,10 +21,15 @@ function CurrentUser() {
     const { app } = React.useContext(FirebaseContext);
     const [currentUser, setCurrentUser] = React.useState<firebase.User | null>(app.auth().currentUser);
     React.useEffect(() => {
-        return app.auth().onAuthStateChanged(user => {
+        try {
+            const unsub = app.auth().onAuthStateChanged((user: firebase.User | null) => {
             console.log(user);
             setCurrentUser(user);
-        });        
+        })
+        } catch (e) {
+            console.log(e.message);
+            alert(e.message);
+        }      
     }, [])
     return <div>{app.auth().currentUser?.email}</div>
 }
@@ -32,7 +37,7 @@ function AppRoot2() {
     
     return (
         <BrowserRouter>
-            <FirebaseContext.Provider value={{ app }}>
+            <FirebaseContext.Provider value={{ app: firebase.app() }}>
                 <CurrentUser/>
             </FirebaseContext.Provider>
         </BrowserRouter>

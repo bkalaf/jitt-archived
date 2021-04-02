@@ -1,4 +1,4 @@
-import { ReactButtonProps } from '../../types/react/ReactButtonProps';
+import ReactButtonProps from '../../types/react/ReactButtonProps';
 
 export type SubmitButtonProps = {
     form: string;

@@ -7,6 +7,7 @@ import ReactFormProps from '../../types/react/ReactFormProps';
 import constants from './../../constants';
 import { IFieldInfo, ModalFooter } from './ModalFooter';
 
+/**@deprecated */
 export function ModalBody<T>(
     props: {
         icon: IconDefinition;

@@ -1,4 +1,5 @@
 import { GUID } from './../datatypes/GUID';
+import IUnsubscribe from '../types/IUnsubscribe';
 
 export interface ISubscription {
     elementType: 'dropdown' | 'button';
@@ -13,9 +14,6 @@ interface TriggerFunction<T extends any[]> {
     unregister(): void;
 }
 
-interface IUnsubscribe {
-    (): void;
-}
 type PublisherOnTrigger = <T extends any[]>(subscription: ISubscription) => TriggerFunction<T>;
 export interface IAggregator {
     registerEvent<T extends any[]>(

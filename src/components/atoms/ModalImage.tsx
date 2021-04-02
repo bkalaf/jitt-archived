@@ -1,8 +1,8 @@
+import { SizeProp } from '@fortawesome/fontawesome-svg-core';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactDivProps } from '../../types/react/ReactButtonProps';
-import { SizeProp } from '@fortawesome/fontawesome-svg-core';
-import { mergeCN } from '../mergeCN';
+
+import ReactDivProps from '../../types/react/ReactDivProps';
 
 export function ModalImage(props: { icon: IconDefinition; size: SizeProp } & ReactDivProps) {
     const { icon, size, className, ...spread } = props;

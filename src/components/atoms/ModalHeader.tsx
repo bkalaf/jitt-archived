@@ -1,4 +1,4 @@
-import { ReactHeaderProps } from '../../types/react/ReactButtonProps';
+import ReactHeaderProps from '../../types/react/ReactHeaderProps';
 import { mergeCN } from '../mergeCN';
 
 const $modalHeader = 'modal-header';
